@@ -1,0 +1,88 @@
+/**
+ * Admin style settings for save datas
+ */
+.thpfr-update-message {
+    background: #fff;
+    border-left: 4px solid green;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    margin: 5px 15px 2px;
+    padding: 1px 12px;  
+}
+
+.thpfr-update-message.failed {
+    border-left: 4px solid red;
+}
+
+/* Admin style Switch Checkbox */
+.thpfr-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+} 
+
+/* Hide default HTML checkbox */
+.thpfr-switch input[type=checkbox] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.thpfr-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.thpfr-slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+   -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .thpfr-slider {
+    background-color: #2196F3;
+}
+
+input:focus + .thpfr-slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .thpfr-slider:before {
+    -webkit-transform: translateX(20px);
+   -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+/* commen settings */
+td.thpfr-form-section-title {
+    font-weight: 500;
+    border-bottom: 1px dashed #cecece;
+}
+
+body .thpfr-form-table td{
+    padding: 9px 0px!important;
+}
+
+/** hide visibility from cp***/
+body.post-type-feature-requests .misc-pub-section#visibility {
+    display: none;
+}
+
+
+
